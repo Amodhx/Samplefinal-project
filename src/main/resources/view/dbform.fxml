@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.dbformController">
+   <children>
+      <AnchorPane prefHeight="850.0" prefWidth="1210.0">
+         <children>
+            <ImageView layoutX="199.0" layoutY="350.0">
+               <image>
+                  <Image url="@assets/addadminicon.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="200.0" layoutY="486.0">
+               <image>
+                  <Image url="@assets/addstuicon.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="200.0" layoutY="616.0">
+               <image>
+                  <Image url="@assets/addteaicon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="addadminButton" layoutX="199.0" layoutY="350.0" mnemonicParsing="false" onAction="#onaddadminButtonClick" opacity="0.0" prefHeight="52.0" prefWidth="57.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="addteacherButton" layoutX="199.0" layoutY="486.0" mnemonicParsing="false" onAction="#onaddTeacherClick" opacity="0.0" prefHeight="52.0" prefWidth="57.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="addStudentButton" layoutX="199.0" layoutY="616.0" mnemonicParsing="false" onAction="#onaddStudentClick" opacity="0.02" prefHeight="52.0" prefWidth="57.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="337.0" layoutY="340.0" text="Add  other Admin">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="476.0" text="Add  Teachers">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="606.0" text="Add  Students">
+               <font>
+                  <Font name="Bell MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="376.0" text="If you want add another admin ! you can use this and fill the form">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="511.0" text="If you want to add classes you can use this function and add class.">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="642.0" text="If you want add a new student you can use this function . Fill the form and save it.">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="66.0" text="Welcome to your dashboard, Excel Education">
+               <font>
+                  <Font name="Bell MT Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="532.0" layoutY="106.0" text="center">
+               <font>
+                  <Font name="Bell MT Bold" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutbutton" layoutX="1065.0" layoutY="54.0" mnemonicParsing="false" onAction="#onLogOutClick" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView layoutX="210.0" layoutY="750.0">
+         <image>
+            <Image url="@assets/sendmail.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="341.0" layoutY="740.0" text="Send Mail">
+         <font>
+            <Font name="Bell MT Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="775.0" text="If you want add a new student you can use this function . Fill the form and save it.">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

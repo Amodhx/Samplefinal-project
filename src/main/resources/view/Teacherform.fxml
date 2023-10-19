@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.TeacherformController">
+   <children>
+      <Button fx:id="addteacherbutton" layoutX="105.0" layoutY="150.0" mnemonicParsing="false" onAction="#onaddTeacherClick" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: rgba(80, 156, 219, 1);" text="Add Teachers" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="table" layoutY="250.0" prefHeight="599.0" prefWidth="1218.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="238.39996033906937" text="Name" />
+          <TableColumn fx:id="subject" prefWidth="234.4000701904297" text="Subject" />
+            <TableColumn fx:id="no" prefWidth="233.5999755859375" text="Contact no:" />
+            <TableColumn fx:id="main" prefWidth="324.0001220703125" text="Email" />
+            <TableColumn fx:id="gender" prefWidth="192.800048828125" text="Gender" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="249.0" prefWidth="217.0" style="-fx-background-color: rgba(80, 156, 219, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.classobjController">
+   <children>
+      <ImageView fitHeight="249.0" fitWidth="217.0">
+         <image>
+            <Image url="@assets/badge.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

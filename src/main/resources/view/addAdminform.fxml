@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="380.0" style="-fx-background-color: rgba(43, 105, 150, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.addAdminController">
+   <children>
+      <Label layoutX="74.0" layoutY="44.0" text="ADD ADMIN" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="38.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="58.0" layoutY="141.0" prefHeight="34.0" prefWidth="214.0" promptText="Enter your User name" />
+      <TextField fx:id="email" layoutX="58.0" layoutY="201.0" prefHeight="34.0" prefWidth="214.0" promptText="Enter your Email" />
+      <TextField fx:id="password" layoutX="58.0" layoutY="316.0" prefHeight="34.0" prefWidth="214.0" promptText="Enter your password" />
+      <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="307.0" layoutY="201.0">
+         <image>
+            <Image url="@assets/verification.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="100.0" layoutY="380.0" text="You have verificate first" textFill="#a9a5a5">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="244.0" layoutY="430.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: rgba(57, 35, 191, 1);" text="ADD" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="verificateButton" layoutX="304.0" layoutY="201.0" mnemonicParsing="false" onAction="#onVerificateClick" opacity="0.0" prefHeight="34.0" prefWidth="38.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="code" layoutX="58.0" layoutY="257.0" onKeyTyped="#oncodetyping" prefHeight="34.0" prefWidth="214.0" promptText="VerificationCode" />
+   </children>
+</AnchorPane>

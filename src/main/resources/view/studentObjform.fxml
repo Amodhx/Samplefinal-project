@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="46.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.studentobjformController">
+   <children>
+      <TextField fx:id="id" alignment="CENTER" layoutX="14.0" layoutY="11.0" prefHeight="26.0" prefWidth="78.0">
+         <font>
+            <Font name="Bell MT Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="name" alignment="CENTER" layoutX="109.0" layoutY="11.0" prefHeight="26.0" prefWidth="166.0">
+         <font>
+            <Font name="Bell MT Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="clss" alignment="CENTER" layoutX="331.0" layoutY="11.0" prefHeight="26.0" prefWidth="78.0">
+         <font>
+            <Font name="Bell MT Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="email" alignment="CENTER" layoutX="506.0" layoutY="11.0" prefHeight="26.0" prefWidth="254.0">
+         <font>
+            <Font name="Bell MT Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="gender" alignment="CENTER" layoutX="812.0" layoutY="11.0" prefHeight="26.0" prefWidth="78.0">
+         <font>
+            <Font name="Bell MT Italic" size="16.0" />
+         </font></TextField>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="981.0" layoutY="11.0" onMouseClicked="#onclickMore">
+         <image>
+            <Image url="@assets/more.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

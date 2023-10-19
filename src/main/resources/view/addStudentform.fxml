@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="599.0" prefWidth="808.0" style="-fx-background-color: rgba(193, 195, 232, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.addStudentController">
+    <children>
+        <Label layoutX="62.0" layoutY="58.0" text="Add Students">
+            <font>
+                <Font name="Bell MT Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="147.0" text="Full Name">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="61.0" layoutY="233.0" text="Email Address">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="321.0" text="Grade">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+        </Label>
+        <Label layoutX="58.0" layoutY="384.0" text="Phone Number">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="name" layoutX="62.0" layoutY="169.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <TextField fx:id="email" layoutX="62.0" layoutY="256.0" prefHeight="26.0" prefWidth="287.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <TextField fx:id="grade" layoutX="61.0" layoutY="344.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <TextField fx:id="number" layoutX="61.0" layoutY="414.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <CheckBox fx:id="male" layoutX="456.0" layoutY="348.0" mnemonicParsing="false" text="Male" />
+        <CheckBox fx:id="female" layoutX="535.0" layoutY="348.0" mnemonicParsing="false" text="Female" />
+        <Label layoutX="434.0" layoutY="147.0" text="Id">
+            <font>
+                <Font name="Bell MT Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="idd" layoutX="435.0" layoutY="169.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+        <JFXButton fx:id="savebutton" buttonType="RAISED" layoutX="535.0" layoutY="461.0" onAction="#onsaveclick" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: rgba(43, 105, 150, 1); -fx-background-radius: 10;" text="Save" />
+      <TextField fx:id="subject1" layoutX="435.0" layoutY="256.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <Label layoutX="434.0" layoutY="233.0" text="Class">
+         <font>
+            <Font name="Bell MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="19.0" text="Last ID:&gt;">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lable" layoutX="751.0" layoutY="20.0">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
