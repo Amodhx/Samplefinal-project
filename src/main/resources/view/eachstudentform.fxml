@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="436.0" style="-fx-background-color: rgba(43, 105, 150, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.eachstudentController">
+   <children>
+      <ImageView fx:id="image" fitHeight="178.0" fitWidth="200.0" layoutX="118.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="51.0" layoutY="349.0" text="Exam Report" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="406.0" text="Attendence Report" textFill="#fafafa">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="229.0" layoutY="346.0" onAction="#onexamreportclik" prefHeight="26.0" prefWidth="68.0" style="-fx-background-radius: 15; -fx-background-color: rgba(22, 51, 153, 1);" text="View" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="235.0" layoutY="403.0" onAction="#onattendeceClick" prefHeight="26.0" prefWidth="68.0" style="-fx-background-radius: 15; -fx-background-color: rgba(22, 51, 153, 1);" text="View" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="name" alignment="CENTER" layoutX="7.0" layoutY="250.0" prefHeight="31.0" prefWidth="426.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="closebutton" layoutX="303.0" layoutY="496.0" onAction="#oncloseclick" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: rgba(180, 130, 114, 1);" text="CLose" textFill="WHITE" />
+   </children>
+</AnchorPane>

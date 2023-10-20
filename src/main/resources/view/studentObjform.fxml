@@ -29,7 +29,7 @@
          <font>
             <Font name="Bell MT Italic" size="16.0" />
          </font></TextField>
-      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="981.0" layoutY="11.0" onMouseClicked="#onclickMore">
+      <ImageView fx:id="morebutton" fitHeight="26.0" fitWidth="28.0" layoutX="981.0" layoutY="11.0" onMouseClicked="#onclick">
          <image>
             <Image url="@assets/more.png" />
          </image>
