@@ -31,6 +31,27 @@ public class Teachermodel {
         }
         return false;
     }
+    public static ArrayList<TeacherDTO> getTeachername(String id){
+        ArrayList<TeacherDTO> ar = new ArrayList<>();
+        try {
+            Connection connection = DBConnection.getInstance().getConnection();
+            PreparedStatement ps = connection.prepareStatement("select * from teacher where T_id = ?");
+            ps.setString(1,id);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()){
+                TeacherDTO dt = new TeacherDTO(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6));
+                ar.add(dt);
+            }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        return ar;
+
+    }
     public static ArrayList<TeacherDTO> getTeacher(String name){
         ArrayList<TeacherDTO> ar = new ArrayList<>();
         try {

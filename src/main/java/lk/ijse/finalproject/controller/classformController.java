@@ -48,14 +48,11 @@ public class classformController implements Initializable {
         int colomn = 0;
         int row = 0;
         for (int i = 0; i < clas.size(); i++) {
-            if (colomn == 3){
-                colomn = 0;
-                row++;
-            }
             try {
+                classobjController.x = i ;
                 Parent parent= FXMLLoader.load(getClass().getResource("/view/classobjform.fxml"));
-                gridpane.add(parent,colomn++,row);
-                GridPane.setMargin(parent,new Insets(50));
+                gridpane.add(parent,colomn,row++);
+                GridPane.setMargin(parent,new Insets(10));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

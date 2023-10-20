@@ -61,7 +61,15 @@ public class DashBoardController {
 
     }
     @FXML
-    void onSendMailClick(MouseEvent event) {
+    void onSendMailClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/view/mailsenderform.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 808, 599);
+        Stage stage=new Stage();
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
+
 
     }
 

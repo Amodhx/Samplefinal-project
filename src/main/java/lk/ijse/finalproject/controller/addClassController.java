@@ -1,6 +1,9 @@
 package lk.ijse.finalproject.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -35,16 +38,18 @@ public class addClassController implements Initializable {
 
     @FXML
     private TextField teachername;
+    @FXML
+    private JFXComboBox combo;
 
     @FXML
     void onsaveclick(ActionEvent event) {
         String a = C_id.getText();
-        String b = teachername.getText();
+        String b = (String) combo.getValue();
         String c = subject.getText();
         String d = grade.getText();
         ArrayList<TeacherDTO> ar = Teachermodel.getTeacher(b);
         String e = ar.get(0).getId();
-        ClassDTO classDTO =new ClassDTO(a,b,e,d);
+        ClassDTO classDTO =new ClassDTO(a,e,c,d);
         boolean is = Classmodel.savClass(classDTO);
 
         Stage stage = (Stage) savebutton.getScene().getWindow();
@@ -55,6 +60,12 @@ public class addClassController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        ArrayList<TeacherDTO> allTeachers = Teachermodel.getAllTeachers();
+        ObservableList<String> list = FXCollections.observableArrayList();
+        for (int i = 0; i < allTeachers.size(); i++) {
+            list.add(allTeachers.get(i).getName());
+        }
+        combo.setItems(list);
         ArrayList<ClassDTO> ar =  Classmodel.getAllClasses();
         if (ar.size() > 0){
             lable.setText(ar.get(ar.size()-1).getClassID());

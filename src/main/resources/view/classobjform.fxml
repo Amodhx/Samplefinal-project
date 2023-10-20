@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="249.0" prefWidth="217.0" style="-fx-background-color: rgba(80, 156, 219, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.classobjController">
+<AnchorPane prefHeight="158.0" prefWidth="1149.0" style="-fx-background-color: rgba(43, 105, 150, 1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalproject.controller.classobjController">
    <children>
-      <ImageView fitHeight="249.0" fitWidth="217.0">
-         <image>
-            <Image url="@assets/badge.png" />
-         </image>
-      </ImageView>
+      <Label layoutX="1114.0" layoutY="65.0" />
+      <Label fx:id="classname" alignment="CENTER" layoutX="70.0" layoutY="55.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="438.0" layoutY="31.0" text="Teacher name &amp; ID" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="teachername" alignment="CENTER" layoutX="456.0" layoutY="58.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="teacherId" alignment="CENTER" layoutX="513.0" layoutY="87.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="916.0" layoutY="31.0" text="Student Count" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="studentcount" alignment="CENTER" layoutX="958.0" layoutY="72.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="738.0" layoutY="31.0" text="Grade" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="grade" alignment="CENTER" layoutX="750.0" layoutY="72.0" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

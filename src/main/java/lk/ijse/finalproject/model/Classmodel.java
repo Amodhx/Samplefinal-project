@@ -29,6 +29,24 @@ public class Classmodel {
         }
         return false;
     }
+    public static ArrayList<String> getClassID(){
+        ArrayList<String> list = new ArrayList<>();
+        try {
+            Connection connection = DBConnection.getInstance().getConnection();
+            PreparedStatement ps = connection.prepareStatement("select distinct class_id from class");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                String  x = new String(rs.getString(1));
+                list.add(x);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        return list;
+
+    }
     public static ArrayList<ClassDTO> getAllClasses(){
         ArrayList<ClassDTO> ar=new ArrayList<>();
         try {

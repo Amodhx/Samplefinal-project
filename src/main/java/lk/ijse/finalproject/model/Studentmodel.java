@@ -31,6 +31,26 @@ public class Studentmodel {
         }
         return false;
     }
+    public static ArrayList<StudentDTO> getStudentCount(String cid, String grade){
+        ArrayList<StudentDTO> ar=new ArrayList<>();
+        try {
+            Connection connection=DBConnection.getInstance().getConnection();
+            PreparedStatement ps=connection.prepareStatement("select * from student where class_id =? and grade = ?");
+            ps.setString(1,cid);
+            ps.setString(2,grade);
+            ResultSet rs=ps.executeQuery();
+            while (rs.next()){
+                StudentDTO st=new StudentDTO(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6));
+                ar.add(st);
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }catch (ClassNotFoundException e){
+            e.printStackTrace();
+        }
+        return ar;
+
+    }
     public static ArrayList<StudentDTO> getAllStudents(){
         ArrayList<StudentDTO> ar=new ArrayList<>();
         try {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -32,7 +33,7 @@
       </Label>
       <TextField fx:id="C_id" layoutX="61.0" layoutY="168.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
       <JFXButton fx:id="savebutton" buttonType="RAISED" layoutX="535.0" layoutY="461.0" onAction="#onsaveclick" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: rgba(43, 105, 150, 1); -fx-background-radius: 10;" text="Save" />
-      <TextField fx:id="teachername" layoutX="434.0" layoutY="239.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <TextField fx:id="teachername" layoutX="404.0" layoutY="63.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
       <Label layoutX="434.0" layoutY="203.0" text="Teacher Name">
          <font>
             <Font name="Bell MT Bold" size="19.0" />
@@ -48,5 +49,6 @@
             <Font name="Bell MT Bold" size="18.0" />
          </font>
       </Label>
+      <JFXComboBox fx:id="combo" layoutX="434.0" layoutY="251.0" prefHeight="26.0" prefWidth="223.0" />
    </children>
 </AnchorPane>
